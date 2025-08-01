@@ -14,16 +14,11 @@ const Viewpaste = () => {
 
 
   return (
-    <div>
-     <div className='flex flex-row gap-7 rounded-2xl place-content-between'>
-      <input className='p-2 rounded-2xl mt-2 bg-black w-[80%] pl-3.5 cursor-not-allowed' type="text" placeholder='Enter tittle here' value={tittle}  disabled onChange={(e) => setTittle(e.target.value)} />
-
+     <div className='flex w-full flex-col gap-2 rounded-2xl place-content-between'>
+      <input className='p-2 rounded-2xl mt-2 bg-black w-[80%] pl-3.5 cursor-not-allowed' type="text" placeholder='Enter tittle here' value={tittle}  disabled />
      
+      <textarea className='p-4 rounded-2xl bg-black min-w-[500px] cursor-not-allowed ' type="text" placeholder='Enter Content here' disabled value={value} rows={20} ></textarea>
     </div>
-    <div className='mt-7'>
-      <textarea className='p-4 rounded-2xl mt-4 bg-black min-w-[500px] cursor-not-allowed ' type="text" placeholder='Enter Content here' disabled value={value} onChange={(e) => setValue(e.target.value)} rows={20} ></textarea>
-    </div>
-   </div>
   )
 }
 

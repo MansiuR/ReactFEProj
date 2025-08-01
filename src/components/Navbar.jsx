@@ -1,28 +1,8 @@
-// import { NavLink } from "react-router-dom"
-
-// const Navbar = () => {
-//   return (
-//     <div className="flex flex-row gap-4 place-content-evenly place-items-center">
-//       <NavLink 
-//         to="/">
-//         Home
-//         </NavLink>
-
-//         <NavLink 
-//         to="/pastes">
-//            Paste
-//         </NavLink>
-//     </div> 
-//   )
-// }
-
-// export default Navbar
-
 import { NavLink } from "react-router-dom";
 
 const Navbar = () => {
   return (
-    <nav className="w-full bg-gray-900 shadow-md">
+    <nav className="flex w-full bg-gray-900 shadow-md">
       <div className="flex justify-end items-center h-16 px-6 space-x-10">
         <NavLink
           to="/"
